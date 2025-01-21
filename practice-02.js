@@ -85,3 +85,11 @@
 //     ...
 // }
 
+// If ... else
+let year = prompt("Is it 2025?");
+
+if (year == 2025) {
+    alert("Yes, you are correct!");
+} else {
+    alert("How can you be wrong?");
+}
