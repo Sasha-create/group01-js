@@ -17,25 +17,58 @@
 // showMessage();
 // alert(message);
 
-//outer variables
-let userName = 'John';
+//Outer variables/Global variables
+// let userName = 'John';
+
+// // function showMessage() {
+// //     let message = 'Hello, ' + userName;
+// //     alert(message);
+// // }
+
+// // showMessage();// Hello, John
 
 // function showMessage() {
+//     userName = 'Bob';
+
 //     let message = 'Hello, ' + userName;
 //     alert(message);
 // }
 
-// showMessage();// Hello, John
+// alert(userName); //John before the function call
 
-function showMessage() {
-    userName = 'Bob';
+// showMessage();   //Hello, Bob
 
-    let message = 'Hello, ' + userName;
-    alert(message);
+// alert(userName); //Bob, the value was modified by the function
+
+//Parameters
+// function showMessage(from, text) {
+//     alert(from + ': ' + text);
+// }
+
+// showMessage('Anna', 'Hello');
+// showMessage('Anna', "What's up?")
+
+//*/** 
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+//     alert(from + ': ' + text);
+// }
+
+// let from = "Ann";
+
+// showMessage(from, "Hello");//
+
+//Default values
+showMessage('Anna');// Anna: undefined
+
+function showMessage(from, text = "no text given") {
+    alert(from + ': ' + text);
 }
 
-alert(userName); //John before the function call
+showMessage("Anna");// Anna: no text given
+showMessage("Anna", undefined);// Anna: no text given
 
-showMessage();   //Hello, Bob
-
-alert(userName); //Bob, the value was modified by the function
+function showMessage(from, text = anotherFunction()) { 
+    // anotherFunction()only executed if no text given
+    // its result becomes the value of text
+}
