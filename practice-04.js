@@ -59,16 +59,54 @@
 // showMessage(from, "Hello");//
 
 //Default values
-showMessage('Anna');// Anna: undefined
+// showMessage('Anna');// Anna: undefined
 
-function showMessage(from, text = "no text given") {
-    alert(from + ': ' + text);
-}
+// function showMessage(from, text = "no text given") {
+//     alert(from + ': ' + text);
+// }
 
-showMessage("Anna");// Anna: no text given
-showMessage("Anna", undefined);// Anna: no text given
+// showMessage("Anna");// Anna: no text given
+// showMessage("Anna", undefined);// Anna: no text given
 
-function showMessage(from, text = anotherFunction()) { 
-    // anotherFunction()only executed if no text given
-    // its result becomes the value of text
-}
+// function showMessage(from, text = anotherFunction()) { 
+//     // anotherFunction()only executed if no text given
+//     // its result becomes the value of text
+// }
+
+//Returning a value
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// let result = sum(2, 5);
+// alert(result);
+
+// function checkAge(age) {
+//     if (age >= 18) {
+//         return true;
+//     } else {
+//         return confirm("Do you have permission from your parents?")
+//     }
+// }
+
+// let age = prompt('How old are you?', 18);
+
+// if (checkAge(age)) {
+//     alert('Access granted');
+// } else {
+//     alert('Access denied')
+// }
+
+// function showMovie(age) {
+//     if (!checkAge(age)) {
+//         return;
+//     }
+
+//     alert('Showing you the movie')
+// }
+
+//Naming a function
+//- "get..."
+//- "calc..."
+//- create...
+//- check...
