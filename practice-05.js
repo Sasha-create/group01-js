@@ -78,19 +78,80 @@
 // alert(key in user); //true
 
 //"for ... in" loop
-for (key in object) {
-    // body
-}
+// for (key in object) {
+//     // body
+// }
 
+// let user = {
+//     name: "John",
+//     age: 30,
+//     isAdmin: true
+// }
+
+// for (let key in user) {
+//     //keys
+//     alert(key); //name, age, isAdmin
+//     //values for the keys
+//     alert(user[key]); //John. 30, true
+// }
+
+//Object methods
+// let user = {
+//     name: "John",
+//     age: 30,
+//     isAdmin: true
+// }
+
+// user.sayHi = function () {
+//     alert("Hello");
+// };
+
+// user.sayHi(); //Hello
+
+// user = {
+//     sayHi: function () {
+//         alert("Hello");
+//     }
+// };
+
+// user = {
+//     sayHi() {
+//         alert("Hello")
+//     }
+// };
+
+//"this" in methods
+// let user = {
+//     name: "John",
+//     age: 30
+
+//     sayHi() {
+//         alert(this.name); //"this" is the "current object"
+//         //alert(user.name)
+//     }
+// };
+
+// user.sayHi(); //John
+
+// let user = {
+//     name: "John",
+//     age: 30
+
+//     sayHi() {
+//         alert(user.name)
+//     }
+// };
+
+// let admin = user;
+// user = null;
+// admin.sayHi(); //TypeError
+
+//Arrow functions have no "this"
 let user = {
-    name: "John",
-    age: 30,
-    isAdmin: true
-}
-
-for (let key in user) {
-    //keys
-    alert(key); //name, age, isAdmin
-    //values for the keys
-    alert(user[key]); //John. 30, true
-}
+    firstName: "John",
+    sayHi() {
+        let arrow = () => alert(this.firstName);
+        arrow();
+    }
+};
+user.sayHi(); //John
