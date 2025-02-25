@@ -147,11 +147,37 @@
 // admin.sayHi(); //TypeError
 
 //Arrow functions have no "this"
-let user = {
-    firstName: "John",
-    sayHi() {
-        let arrow = () => alert(this.firstName);
-        arrow();
+// let user = {
+//     firstName: "John",
+//     sayHi() {
+//         let arrow = () => alert(this.firstName);
+//         arrow();
+//     }
+// };
+// user.sayHi(); //John
+
+//Constructor, operator "new"
+// function User(name) {
+//     this.name = name;
+//     this.isAdmin = false;
+// }
+
+// let user = new User("Jack");
+
+// alert(user.name); //Jack
+// alert(user.isAdmin); //false
+
+//Return from constructor
+    function BigUser() {
+        this.name = "John";
+        return { name: "Bill" };  // <- returns this object
     }
-};
-user.sayHi(); //John
+
+alert(new BigUser().name);  // Bill got that object
+
+function SmallUser() {
+        this.name = "John";
+        return;  // <- returns this object
+    }
+
+alert(new SmallUser().name);  // John
