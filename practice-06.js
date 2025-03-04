@@ -71,10 +71,26 @@
 //new Array()
 // let arr = new Array("Apple", "Pear", "Plum");
 
-// //Multidimensional arrays
+//Multidimensional arrays
 // let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 // alert(matrix[0][1]); // 2
 // alert(matrix[1][1]); // 5
 // alert(matrix[1][2]); //6
 // alert(matrix[0][0]);  //1
+
+//toString
+// let arr = [1, 2, 3];
+// alert(arr); //1,2,3
+// alert(String(arr) === '1,2,3'); //true
+// alert([] + 1); //"1"
+// alert([1] + 1); //"11"
+// alert([1, 2] + 1); //"1,21"
+// alert("" + 1); //"1"
+// alert("1" + 1); //"11"
+// alert("1,2" + 1);//"1,21"
+
+//don't compare arrays with ==
+// alert([] == []); //false
+// alert([0] == [0]); //false
+//===
