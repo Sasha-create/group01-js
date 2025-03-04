@@ -56,3 +56,25 @@
 // fruits.push("Orange", "Peach");
 // fruits.unshift("Lemon", "Pineapple");
 // alert(fruits);  //Lemon,Pineapple,Apple,Orange,Peach
+
+//LOOPS
+// let arr = ["Apple", "Orange", "Plum"];
+// //for..of
+// for (let fruit of fruits) {
+//     alert(fruit)
+// }
+// //for..in
+// for (let key in arr) {
+//     alert(arr[key]); //Apple, Orange. Plum
+// }
+
+//new Array()
+// let arr = new Array("Apple", "Pear", "Plum");
+
+// //Multidimensional arrays
+// let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+// alert(matrix[0][1]); // 2
+// alert(matrix[1][1]); // 5
+// alert(matrix[1][2]); //6
+// alert(matrix[0][0]);  //1
