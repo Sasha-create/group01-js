@@ -111,3 +111,28 @@
 //  - set.keys() - returns an iterable for values
 //  - set.values() - same as set.keys()
 //  - set.entries() - returns an iterable for entries [value, value]
+
+
+//Splice, slice, concat, forEach, indexOf/lastIndexOf, includes, find, findIndex/findLastIndex, filter, map, sort(fn), reverse, join, Array.isArray, reduce
+//splice
+// let arr = ["I", "study", "JavaScript", "right", "now"];
+// // arr.splice(1, 1); //from index 1 remove 1 element
+// // alert(arr); //["I", "JavaScript"]
+
+// arr.splice(5, 0, "quick");
+// alert(arr);
+
+//slice
+// let arr = ["t", "e", "s", "t"];
+// alert(arr.slice(1, 3)); //e,s
+// alert(arr.slice(-2)); //s,t
+
+//concat
+// let arr = [1, 2];
+// alert(arr.concat([3, 4])); // 1,2,3,4
+// alert(arr.concat([3, 4], [5, 6])); // 1,2,3,4,5,6
+
+//forEach
+// ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+//     alert(`${item} is at index ${index} in ${array}`)
+// })
