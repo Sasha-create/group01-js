@@ -136,3 +136,50 @@
 // ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
 //     alert(`${item} is at index ${index} in ${array}`)
 // })
+
+//indexOf/lastIndexOf, includes
+// - arr.indexOf(item, from) - looks for item starting from index from, and returns the index where it was found
+// - arr.includes(item, from) - looks for item starting from index from, returns true if found
+// let arr = [1, 0, false, 5, 9, "yes"];
+
+// alert(arr.indexOf(0)); //1
+// alert(arr.indexOf(9)); //4
+// alert(arr.indexOf(false)); //2
+// alert(arr.indexOf("yes")); //5
+// alert(arr.indexOf(null)); //-1
+
+// alert(arr.includes(1)); // true
+
+// let fruits = ['Apple', 'Orange', 'Apple'];
+
+// alert(arr.indexOf('Apple')); //0
+// alert(arr.lastIndexOf('Apple')); //2
+
+//find, findIndex/findLastIndex
+let result = arr.find(function (item, index, array) {
+    //if true is returned, item is returned and iteration is stopped
+    // for falsy scenario returns undefined
+});
+// - item is the element
+// - index is its index
+// - array is the array itself
+
+// let users = [{ id: 1, name: "John" },{ id: 2, name: "Bob" },{ id: 3, name: "Mary" }, { id: 4, name: "John" }];
+
+// // let user = users.find(item => item.id == 1);
+// // alert(user.name); //John
+
+// alert(users.findIndex(user => user.name == 'John')); //0
+// alert(users.findLastIndex(user => user.name == 'John')); //3
+
+//filter
+// let users = [
+//     { id: 1, name: "John" },
+//     { id: 2, name: "Bob" },
+//     { id: 3, name: "Mary" },
+//     { id: 4, name: "John" }
+// ];
+
+// let someUsers = users.filter(item => item.id < 3);
+// alert(someUsers.length); //2
+
