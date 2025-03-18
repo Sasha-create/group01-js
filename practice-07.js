@@ -172,7 +172,7 @@ let result = arr.find(function (item, index, array) {
 // alert(users.findIndex(user => user.name == 'John')); //0
 // alert(users.findLastIndex(user => user.name == 'John')); //3
 
-//filter
+// filter
 // let users = [
 //     { id: 1, name: "John" },
 //     { id: 2, name: "Bob" },
