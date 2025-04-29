@@ -7,11 +7,11 @@
 let doubled = [1, 2, 3].map(num => num * 2);
 
 // 3)Use map to extract the names from an array of objects.
-let users = [
-    { name: "Alice" },
-    { name: "Bob" }
-]
-let names = users.map(user => user.name);
+// let users = [
+//     { name: "Alice" },
+//     { name: "Bob" }
+// ]
+// let names = users.map(user => user.name);
 
 // 4)Use filter to get only even numbers from an array.
 let evens = [1, 2, 3, 4].filter(num => num % 2 === 0);
@@ -71,25 +71,69 @@ let combined = [1, 2].concat([3, 4]);
 // Searching & Sorting
 
 // 20)Use includes() to check if a value exists in an array.
+// let users = ["Anna", "Isabella", "Oleksandra"];
+// console.log(users.includes("Anna")); //true
 
 // 21)Use indexOf() to find the index of a specific element.
+// let users = ["Anna", "Isabella", "Oleksandra"];
+// console.log(users.indexOf("Isabella")); //1
 
 // 22)Use findIndex() to locate the index of an object with a specific property.
+// let users = [
+//     { name: "Anna", age: 20 },
+//     { name: "Isabella", age: 15 }
+// ];
+// let index = users.findIndex(user => user.name === "Anna");
+// console.log(index); //0
 
 // 23)Use sort() to sort an array of numbers ascending.
+let numbers = [2, 10, 1, 3, 12];
+numbers.sort((a, b) => a - b);
+console.log(numbers); //[1, 2, 3, 10, 12]
 
 // 24)Use sort() with a compare function to sort an array of objects by age.
+let users = [
+    { name: "Anna", age: 20 },
+    { name: "Isabella", age: 15 }
+];
+users.sort((a, b) => a.age - b.age);
+console.log(users); 
+//[{ name: "Isabella", age: 15 }, { name: "Anna", age: 20 }]
+    
 
 //  ES6+ Methods
 
 // 25)Use Array.from() to create an array from a string.
+let str = "hello";
+let letters = Array.from(str);
+console.log(letters); //["h", "e", "l", "l", "o"]
 
 // 26)Use Array.isArray() to check if a value is an array.
+console.log(Array.isArray([1, 2, 3])); //true
+console.log(Array.isArray("not an array")); //false
 
 // 27)Use Array.fill() to create an array of 10 zeros.
+let zeros = new Array(10).fill(0);
+console.log(zeros); //[0,0,0,0,0,0,0,0,0,0]
 
 // 28)Use Array.of() to create an array from individual arguments.
+// let array = Array.of(1, 2, 3);
+// console.log(array); //[1,2,3]
 
 // 29)Use entries() to iterate with index-value pairs.
+let animals = ["cat", "dog", "bird"];
+for (let [index, value] of animals.entries()) {
+    console.log(index, value);
+};
+// 0 cat
+// 1 dog
+// 2 bird
 
 // 30)Use keys() and values() to get keys and values of an array.
+let array = ["a", "b", "c"];
+for (let key of array.keys()) {
+    console.log(key); //0, 1, 2
+}
+for (let value of array.values()) {
+    console.log(value); //"a", "b", "c"
+}
