@@ -1,2 +1,9 @@
 //DOM tree (Document Object Model)
-document.body.style.background = "red"
+//BOM (Browser object Model)
+//Javascript
+const ul = document.querySelector('ul');
+const button = document.querySelector('button');
+
+const li = document.createElement('li');
+li.textContent = 'Item2';
+ul.appendChild(li);
