@@ -68,19 +68,35 @@
 // console.log(max); //15
 
 // 15. Sort an array of numbers in descending order.
-let nums = [3, 1, 4];
-nums.sort((a, b) => b - a);
-console.log(nums);//[4,3,1]
+// let nums = [3, 1, 4];
+// nums.sort((a, b) => b - a);
+// console.log(nums);//[4,3,1]
 
 // 16. Combine two arrays into one using concat().
+// let a = [1, 2];
+// let b = [3, 4];
+// let combined = a.concat(b);
+// console.log(combined); // [1,2,3,4]
 
 // 17. Get an array of unique values from an array using Set and spread syntax.
+// let nums = [1, 2, 2, 3];
+// let unique = [...new Set(nums)];
+// console.log(unique); // [1,2,3]
 
 // 18. Get the last element of an array without using pop().
+// let nums = [10, 20, 30];
+// let last = nums[nums.length - 1];
+// console.log(last); // 30
 
 // 19. Use slice() to get the first 3 elements of an array.
+// let nums = [1, 2, 3, 4, 5];
+// let firstThree = nums.slice(0, 3);
+// console.log(firstThree); // [1,2,3]
 
 // 20. Use splice() to insert an element at the 2nd index.
+// let nums = [1, 2, 4, 5];
+// nums.splice(2, 0, 3);
+// console.log(nums); // [1,2,3,4,5]
 
 // 21. Remove the first element of an array using shift().
 
