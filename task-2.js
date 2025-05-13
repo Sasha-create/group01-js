@@ -99,18 +99,48 @@
 // console.log(nums); // [1,2,3,4,5]
 
 // 21. Remove the first element of an array using shift().
+// let nums = [1, 2, 3, 4];
+// nums.shift();
+// console.log(nums); // [2,3,4]
 
 // 22. Add a new element to the start of an array using unshift().
+// let numbers = [2, 3, 4];
+// numbers.unshift(1);
+// console.log(numbers);// [1,2,3,4]
 
 // 23. Check if an array includes a certain value using includes().
+// let nums = [1, 2, 3];
+// console.log(nums.includes(2)); //true
 
 // 24. Find the index of a specific element using indexOf().
+// let items = ['a', 'b', 'c'];
+// console.log(items.includes('b')); //1
 
 // 25. Join an array of words into a sentence using join().
+// let words = ['hello', 'world'];
+// console.log(words.join(' ')); 
 
 // 26. Use map() to extract a property from an array of objects.
+// let users = [{ name: 'Alice' }, { name: 'Bob' }];
+// let names = users.map(u => u.name);
+// console.log(names);
 
 // 27. Group objects by a property using reduce().
+let items = [
+    { type: 'fruit', name: 'apple' },
+    { type: 'fruit', name: 'banana' },
+    { type: 'veg', name: 'carrot' },
+    { type: 'fruit', name: 'orange' },
+    { type: 'veg', name: 'potatoes' }
+    
+]
+
+let grouped = items.reduce((acc, item) => {
+    (acc[item.type] = acc[item.type] || []).push(item.name);
+    return acc;
+    
+}, {});
+console.log(grouped); //fruit: (3) ['apple', 'banana', 'orange']; veg: (2) ['carrot', 'potatoes']
 
 // 28. Filter out falsy values (false, 0, null, etc.) from an array.
 
