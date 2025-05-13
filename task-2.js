@@ -126,24 +126,45 @@
 // console.log(names);
 
 // 27. Group objects by a property using reduce().
-let items = [
-    { type: 'fruit', name: 'apple' },
-    { type: 'fruit', name: 'banana' },
-    { type: 'veg', name: 'carrot' },
-    { type: 'fruit', name: 'orange' },
-    { type: 'veg', name: 'potatoes' }
+// let items = [
+//     { type: 'fruit', name: 'apple' },
+//     { type: 'fruit', name: 'banana' },
+//     { type: 'veg', name: 'carrot' },
+//     { type: 'fruit', name: 'orange' },
+//     { type: 'veg', name: 'potatoes' }
     
-]
+// ]
 
-let grouped = items.reduce((acc, item) => {
-    (acc[item.type] = acc[item.type] || []).push(item.name);
-    return acc;
+// let grouped = items.reduce((acc, item) => {
+//     (acc[item.type] = acc[item.type] || []).push(item.name);
+//     return acc;
     
-}, {});
-console.log(grouped); //fruit: (3) ['apple', 'banana', 'orange']; veg: (2) ['carrot', 'potatoes']
+// }, {});
+// console.log(grouped); //fruit: (3) ['apple', 'banana', 'orange']; veg: (2) ['carrot', 'potatoes']
 
 // 28. Filter out falsy values (false, 0, null, etc.) from an array.
+// let arr = [false, 0, 1, 'a', null, 5, 'world'];
+// let truthy = arr.filter(Boolean);
+// console.log(truthy); // [1, 'a', 5, 'world']
 
 // 29. Use some() to check if any string in an array contains a specific substring.
+// let arr = ['hello', 'world', 'javascript']; // 'js'
+// let hasJS = arr.some(str => str.includes('js'));
+// console.log(hasJS); //false
 
 // 30. Chunk an array into smaller arrays of a specific size.
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let size = 2;
+// let chunks = [];
+// for (let i = 0; i < arr.length; i += size){
+//     chunks.push(arr.slice(i, i + size));
+// }
+// console.log(chunks); //[[1, 2], [3, 4], [5, 6], [7, 8]]
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let size = 4;
+let chunks = [];
+for (let i = 0; i < arr.length; i += size){
+    chunks.push(arr.slice(i, i + size));
+}
+console.log(chunks); // [[1, 2, 3, 4], [5, 6, 7, 8]]
