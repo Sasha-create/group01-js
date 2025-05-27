@@ -40,3 +40,28 @@
 //Prompt
 // const promptResult = prompt("Who you are in the real life?");
 // console.log(promptResult);
+
+
+
+// DOM
+// Document navigation
+
+
+// const htmlElement = document.documentElement;
+// const headElement = document.head;
+// const bodyElement = document.body;
+// console.log(htmlElement);
+// console.log(headElement);
+// console.log(bodyElement);
+
+//------------------------------------------
+
+// Get object body
+// const bodyElement = document.body;
+
+// First and last child elements
+// const firstChildNode = bodyElement.firstChild;
+// const lastChildNode = bodyElement.lastChild;
+
+// console.log(firstChildNode);
+// console.log(lastChildNode);
