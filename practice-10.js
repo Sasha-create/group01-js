@@ -357,3 +357,11 @@ return the first element
 // console.log(newText);
 
 //===================
+//PRACTICE
+document.querySelectorAll('p').forEach(p => {
+	p.style.width = "300px";
+	p.style.backgroundColor = "yellow";
+	p.style.border = "2px solid #4CAF50";
+	p.style.borderWidth = "10px";
+	p.style.padding = "12px";
+})
