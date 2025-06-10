@@ -144,47 +144,47 @@ Element navigation
 
 
 // Search by class selector
-const elemsOne = document.querySelectorAll('.lesson__list');
-console.log(elemsOne);
+// const elemsOne = document.querySelectorAll('.lesson__list');
+// console.log(elemsOne);
 
 // Search by tag selector
-const elemsTwo = document.querySelectorAll('li');
-console.log(elemsTwo);
+// const elemsTwo = document.querySelectorAll('li');
+// console.log(elemsTwo);
 
 // Search by mixed selector of tag and class
-const elemsThree =
-	document.querySelectorAll('li.lesson__item-list');
-console.log(elemsThree);
+// const elemsThree =
+// 	document.querySelectorAll('li.lesson__item-list');
+// console.log(elemsThree);
 
 // Search by tag of the first nesting level
-const elemsFour =
-	document.querySelectorAll('.lesson__list>li');
-console.log(elemsFour);
+// const elemsFour =
+// 	document.querySelectorAll('.lesson__list>li');
+// console.log(elemsFour);
 
 // Search by several classes
-const elemsFive =
-	document.querySelectorAll('.lesson__list, .lesson__text');
-console.log(elemsFive);
+// const elemsFive =
+// 	document.querySelectorAll('.lesson__list, .lesson__text');
+// console.log(elemsFive);
 
 // Search by nested class
-const elemsSix =
-	document.querySelectorAll('.lesson__list .lesson__text');
-console.log(elemsSix);
+// const elemsSix =
+// 	document.querySelectorAll('.lesson__list .lesson__text');
+// console.log(elemsSix);
 
 // Search by ID
-const elemsSeven =
-	document.querySelectorAll('#listItem');
-console.log(elemsSeven);
+// const elemsSeven =
+// 	document.querySelectorAll('#listItem');
+// console.log(elemsSeven);
 
 // Search by attribute
-const elemsEight =
-	document.querySelectorAll('[data-item]');
-console.log(elemsEight);
+// const elemsEight =
+// 	document.querySelectorAll('[data-item]');
+// console.log(elemsEight);
 
 // Search by attribute with some specific value
-const elemsNine =
-	document.querySelectorAll('[data-item="40"]');
-console.log(elemsNine);
+// const elemsNine =
+// 	document.querySelectorAll('[data-item="40"]');
+// console.log(elemsNine);
 
 
 //--------------
@@ -206,3 +206,154 @@ elems.forEach(item => {
 	console.log(item);
 });
 */
+//---------------------
+
+// .querySelector(CSS);
+/*
+return the first element 
+*/
+
+// const lessonList = document.querySelectorAll('.lesson__list')[0];
+// const lessonList = document.querySelector('.lesson__list');
+// console.log(lessonList);
+
+//---------------------
+
+//.getElementById(ID)
+
+// const elem = document.getElementById('listItem');
+// console.log(elem);
+
+/*
+1. id - must be unique
+2. the search is only inside the object
+*/
+
+//.getElementsBy*
+//.getElementsByTagName(tag)
+
+// const elems = document.getElementsByTagName('li');
+// console.log(elems);
+
+//-------
+
+
+// .getElementsByClassName(className)
+
+
+// const elems = document.getElementsByClassName('lesson__item-list');
+// console.log(elems);
+
+//-------
+
+// .getElementsByName
+// const elems = document.getElementsByName('list');
+// console.log(elems);
+
+// Static collection
+// const listStatic = document.querySelectorAll('.lesson__item-list');
+
+// Alive collection
+// const listLive = document.getElementsByClassName('lesson__item-list');
+
+// console.log(listStatic);
+// console.log(listLive);
+
+
+// create new HTML-object
+// const lessonList = document.querySelector('.lesson__list');
+// lessonList.insertAdjacentHTML(
+// 	"beforeend",
+// 	'<li class="lesson__item-list">New TITLE</li>'
+// );
+
+//---------------------
+
+//closest
+// const elem = document.querySelector('.lesson__item-sub-list');
+// const parentList = elem.closest('.lesson__list');
+// console.log(parentList);
+
+//matches
+// const elems = document.querySelectorAll('.lesson__item-list');
+// for (let elem of elems) {
+// 	if (elem.matches('[class$="lesson__item-list_red"]')) {
+// 		console.log('Red');
+// 	} else if (elem.matches('[class$="lesson__item-list_blue"]')) {
+// 		console.log('Blue');
+// 	}
+// }
+
+//change document
+//innerHTML
+
+//get object
+// const textElement = document.querySelector('.lesson__text');
+
+//get content object "how it is" with HTML
+// const textElementContent = textElement.innerHTML;
+// console.log(textElementContent);
+
+//change content object
+// textElement.innerHTML = `Free coding life`;
+
+//add content object
+// textElement.innerHTML =
+// 	`<p>${textElementContent}</p> <p>Create
+// 	<span>Spider</span> web!</p>`;
+
+// console.log(textElement.innerHTML);
+
+//outerHTML
+
+// const textElement = document.querySelector('.lesson__text');
+// const textElementContent = textElement.outerHTML;
+// console.log(textElementContent);
+
+
+// textElement.outerHTML = `<p>${textElementContent}</p> <p>Create
+// 	<span>Spider</span> web!</p>`;;
+
+// console.log(textElement.outerHTML);
+
+//textContent
+// const textElement = document.querySelector('.lesson__text');
+// const textElementContent = textElement.textContent;
+// console.log(textElementContent);
+
+// textElement.textContent = `<p>${textElementContent}</p> <p>Create <span>Spider</span> web!</p>`;
+
+// console.log(textElement.textContent);
+
+// data
+// content text node/comment
+
+// // get object
+// const textElement = document.querySelector('.lesson__text');
+// const getComment = textElement.nextSibling;
+
+// console.log(getComment);
+// console.log(getComment.data);
+
+
+// change text node/comment
+// getComment.data = 'Hello there';
+// console.log(getComment.data);
+
+
+//=====================
+
+// Сreate elements and nodes
+
+// creat new element(tag)
+// const newElement = document.createElement('div');
+
+// fill new element
+// newElement.innerHTML = `Free coding classes`;
+// console.log(newElement);
+
+// create new text node
+// const newText = document.createTextNode('Hello!!!');
+// console.log(newText);
+
+//===================
