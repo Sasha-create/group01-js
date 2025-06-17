@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Practice JavaScript</h1>
-    <div class="lesson">
+    <div id="parent" class="lesson">
+        <p id="textElement">HELLOOOOOO</p>
         <div class="lesson__text">TEXT</div>
         <ul name="list" class="lesson__list">
             <li class="lesson__item-list">Title1
@@ -29,6 +30,15 @@
                 <p>paragraph</p>
             </li>
         </ul>
+
+        <h2>My to-do list</h2>
+        <ul id="todo-list">
+            <li>Buy groceries</li>
+            <li>walk the dog</li>
+        </ul>
+
+        <button onclick="addTodo()">Add New Item to List</button>
+        
     </div>
 
 

@@ -358,10 +358,100 @@ return the first element
 
 //===================
 //PRACTICE
-document.querySelectorAll('p').forEach(p => {
-	p.style.width = "300px";
-	p.style.backgroundColor = "yellow";
-	p.style.border = "2px solid #4CAF50";
-	p.style.borderWidth = "10px";
-	p.style.padding = "12px";
-})
+// document.querySelectorAll('p').forEach(p => {
+// 	p.style.width = "300px";
+// 	p.style.backgroundColor = "yellow";
+// 	p.style.border = "2px solid #4CAF50";
+// 	p.style.borderWidth = "10px";
+// 	p.style.padding = "12px";
+// })
+
+// Add new element...
+
+//...before object
+//textElement.before(newElement);
+// const textElement = document.getElementById("textElement");
+// const newElement = document.createElement("span");
+// newElement.textContent = "Inserted";
+// textElement.before(newElement);
+
+//...after object
+//textElement.after(newElement);
+// const textElement = document.getElementById("textElement");
+// const newElement = document.createElement("span");
+// newElement.textContent = "Inserted";
+// textElement.after(newElement);
+
+
+//...inside and on the start object
+//textElement.prepend(newElement);
+// const textElement = document.getElementById("textElement");
+// const newElement = document.createElement("span");
+// newElement.textContent = "Inserted";
+// textElement.prepend(newElement);
+
+//...inside and on the end object
+//textElement.append(newElement);
+// const textElement = document.getElementById("textElement");
+// const newElement = document.createElement("span");
+// newElement.textContent = "Inserted";
+// textElement.append(newElement, "we check append method");
+
+// Add a few elements the same time
+//textElement.append(newElement, "Hello!");
+
+
+
+// insertAdjacentHTML/Text/Element
+
+// Get object
+// const textElement = document.querySelector('.lesson__text');
+
+// Add text, HTML, element
+// textElement.insertAdjacentHTML(
+// 	'afterend',
+// 	`<p>Freelance is
+// 	<span class="yellow">OUR</span> life!</p>`
+// );
+
+/*
+"beforebegin",
+"afterbegin",
+"beforeend",
+"afterend"
+*/
+
+// function addTodo() {
+// 	const list = document.getElementById("todo-list");
+
+//     list.insertAdjacentHTML(
+// 	'afterbegin',
+// 	`<li>Learn insertAdjacentHTML, insertAdjacentText, insertAdjacentElement</li>`
+// )
+// }
+
+//=======================
+
+// cloneNode
+
+/*
+when we need copy element
+*/
+
+// Get object
+// const textElement = document.querySelector('.lesson__text');
+// Clone whitout siblings 
+//const cloneTextElement = textElement.cloneNode();
+
+// Deep clone with content 
+// const cloneTextElement = textElement.cloneNode(true);
+
+// const lessonBlock = document.querySelector('.lesson');
+// lessonBlock.append(cloneTextElement);
+
+// Remove nodes
+
+// Get object
+// const textElement = document.querySelector('.lesson__text');
+// Remove object
+// textElement.remove();
