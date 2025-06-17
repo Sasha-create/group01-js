@@ -455,3 +455,59 @@ when we need copy element
 // const textElement = document.querySelector('.lesson__text');
 // Remove object
 // textElement.remove();
+
+//========================================================
+
+// Styles and classes
+
+// Manage classes
+// className and classList
+
+// className
+
+// Get element
+// const element = document.querySelector('.lesson__item-list_red');
+
+// Get classe name
+// const elementClassNames = element.className;
+// console.log(elementClassNames);
+
+// Change classe name
+// element.className = "red";
+
+//-----------------------------
+
+// classList
+
+// Get element
+//const element = document.querySelector('.lesson__item-list_red');
+
+// Add class
+element.classList.add('active');
+// Remove class
+element.classList.remove('active');
+// Add class if we do not have it, and delete if we have it
+element.classList.toggle('active');
+// Check class, return true/false.
+element.classList.contains('active');
+
+
+function addTodo() {
+	const list = document.getElementById("todo-list");
+
+    list.insertAdjacentHTML(
+	'beforeend',
+	`<li class="task-item">Learn insertAdjacentHTML, insertAdjacentText, insertAdjacentElement</li>`
+)
+}
+
+function highlightLast() {
+	const items = document.querySelectorAll('.task-item');
+	const lastItem = items[items.lenght - 1]
+
+	lastItem.classList.add("highlight");
+	lastItem.addEventListener("click", () => {
+		lastItem.classList.toggle("highlight")
+	})
+
+}

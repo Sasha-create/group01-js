@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Practice JavaScript</h1>
@@ -15,7 +21,7 @@
                 <p>paragraph</p>
             </li>
 
-            <li id="listItem" class="lesson__item-list">Title2
+            <li id="listItem" class="lesson__item-list lesson__item-list_red">Title2
                 <p>paragraph</p>
             </li>
             <li data-item="40" class="lesson__item-list">Title3
@@ -38,7 +44,8 @@
         </ul>
 
         <button onclick="addTodo()">Add New Item to List</button>
-        
+        <button onclick="highlightLast()">highlight Last ITEM</button>
+
     </div>
 
 
