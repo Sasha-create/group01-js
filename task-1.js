@@ -59,3 +59,15 @@ const imagesList = images.map(el => {
 });
 
 pinterestList.append(...imagesList);
+
+pinterestList.style.display = 'flex';
+pinterestList.style.justifyContent = 'space-around';
+
+const actions = document.querySelectorAll('#pinterest li');
+actions.forEach(el => {
+    el.style.width = '370px';
+    el.style.height = '200px';
+    el.style.border = '2px solid pink';
+    el.style.borderRadius = '2px';
+    el.style.overflow = 'hidden';
+})
